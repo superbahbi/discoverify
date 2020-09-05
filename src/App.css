@@ -19,6 +19,17 @@
   align-items: center;
   justify-content: center;
 }
+.SigninBtn {
+  background-color: #1DB954;
+  color: #000000;
+  font-weight: 600;
+  border-color: #000000;
+}
+.SigninBtn:hover {
+  background-color: #1DB954;
+  font-weight: 600;
+  border-color: #000000;
+}
 .Footer {
   font-size: .5em;
 }
