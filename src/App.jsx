@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SpotifyAuth, Scopes  } from 'react-spotify-auth'
 import { SpotifyApiContext  } from 'react-spotify-api'
 import Main from "./Main"
@@ -8,13 +8,15 @@ import './App.css';
 
 function App() {
   const [ token, setToken] = useState("")
+useEffect( () => {
   setToken(Cookies.get('spotifyAuthToken'))
+});
   return (
   <div className="App">
     <Section>
       <Container>
-        <Heading className="Title">
-          Playlistify
+        <Heading >
+          <a className="Title" href="/" >Playlistify</a>
         </Heading>
       </Container>
     </Section>
