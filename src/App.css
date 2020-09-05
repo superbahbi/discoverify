@@ -13,7 +13,7 @@
 
 }
 .Title {
-  color: #1DB954;
+  color: #1DB954 !important;
 }
 .Column {
   align-items: center;
