@@ -30,6 +30,17 @@
   font-weight: 600;
   border-color: #000000;
 }
+.Box {
+  background-color: #000000;
+  color: white;
+  padding: 1em;
+  margin-top: 1em;
+  width: 15em;
+}
+.BoxItem {
+  font-size: .5em;
+
+}
 .Footer {
   font-size: .5em;
 }
