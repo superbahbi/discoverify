@@ -1,9 +1,14 @@
 import React from 'react';
+import { SpotifyAuth, Scopes  } from 'react-spotify-auth'
+import { SpotifyApiContext  } from 'react-spotify-api'
+import Data from "./Data"
+import Cookies from 'js-cookie'
 import 'react-bulma-components/dist/react-bulma-components.min.css';
-import { Button, Heading, Container, Section, Columns, Content } from 'react-bulma-components';
+import { Heading, Container, Section, Columns, Content } from 'react-bulma-components';
 import './App.css';
 
 function App() {
+  const token = Cookies.get('spotifyAuthToken')
   return (
   <div className="App">
     <Section>
@@ -17,10 +22,27 @@ function App() {
       <Container>
         <Columns>
           <Columns.Column className="Column">
-            <Content>
+          {token ? (
+    
+            <SpotifyApiContext.Provider value={token}>
+              <Data token={token} />
+            </SpotifyApiContext.Provider>
+
+
+            ) : (
+              // Display the login page
+              <Content>
               <p>Want to find out how much storage it costs to download your Spotify library as mp3? No? Well find out by pressing the button below!</p>
-              <Button color="black">Sign in with Spotify</Button>
+              <SpotifyAuth
+                noLogo="true"
+                btnClassName="SigninBtn button"
+                redirectUri='http://localhost:3000/callback'
+                clientID={process.env.REACT_APP_CLIENT_ID}
+                scopes={[Scopes.all]}
+              />
             </Content>
+            )}
+
           </Columns.Column>
           <Columns.Column>
           </Columns.Column>
