@@ -31,7 +31,7 @@ function App() {
               <SpotifyAuth
                 noLogo="true"
                 btnClassName="SigninBtn button"
-                redirectUri='http://localhost:3000/callback'
+                redirectUri={process.env.REACT_APP_CALLBACK}
                 clientID={process.env.REACT_APP_CLIENT_ID}
                 scopes={[Scopes.all]}
               />
