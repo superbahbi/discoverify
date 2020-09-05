@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SpotifyAuth, Scopes  } from 'react-spotify-auth'
 import { SpotifyApiContext  } from 'react-spotify-api'
 import Main from "./Main"
@@ -7,7 +7,8 @@ import { Heading, Container, Section, Columns, Content } from 'react-bulma-compo
 import './App.css';
 
 function App() {
-  const token = Cookies.get('spotifyAuthToken')
+  const [ token, setToken] = useState("")
+  setToken(Cookies.get('spotifyAuthToken'))
   return (
   <div className="App">
     <Section>
