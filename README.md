@@ -13,7 +13,7 @@ To work with this project locally, first install all dependecies:
 Git clone
 
 ```
-git clone https://github.com/superbahbi/twitter-clone-app.git
+git clone https://github.com/superbahbi/Playlistify.git
 ```
 
 Install NPM packages
