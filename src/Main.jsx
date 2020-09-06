@@ -39,11 +39,9 @@ function Main(props) {
 
   return (
     <Fragment>
-
-            <div>
-             <span role="img">👋</span>  Hi, {user.display_name} { }
-            </div>
-
+        <div>
+            <span role="img">👋</span>  Hi, {user.display_name} 
+        </div>
         <Box className="Box">
             <Media>
                 <Media.Item>
