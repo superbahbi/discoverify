@@ -15,7 +15,6 @@ function Main(props) {
             if (err) console.error(err);
             else setUser(data);
         });
-        console.log(user)
     }, []);
     useEffect(() => {
             setLimit(20)
@@ -24,9 +23,9 @@ function Main(props) {
             .then(
                 function (data) {
                     setUserPlaylist(data);
-                    data.items.map(playlist =>{   
+                    data.items.map(playlist =>
                         setPlaylistCount(playlistCount => playlistCount + playlist.tracks.total)
-                    })
+                    )
                     if(data.next !== null) {
                         setOffset(prevCount => prevCount + 20)
                     } 
@@ -35,7 +34,7 @@ function Main(props) {
                     console.error(err);
                 }
             );
-    }, [offset]);
+    }, [limit, offset]);
 
   return (
     <Fragment>

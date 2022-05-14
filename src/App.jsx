@@ -10,7 +10,7 @@ function App() {
   const [ token, setToken] = useState("")
 useEffect( () => {
   setToken(Cookies.get('spotifyAuthToken'))
-});
+},[]);
   return (
   <div className="App">
     <Section>
