@@ -1,4 +1,4 @@
-# Playlistify
+# Discoverify
 [![Netlify Status](https://api.netlify.com/api/v1/badges/55e29423-f3a8-4462-b9e7-fa8b148f003e/deploy-status)](https://app.netlify.com/sites/peppy-elf-212874/deploys)
 
 Show the amount of storage you'll need to save all your songs as mp3 files
