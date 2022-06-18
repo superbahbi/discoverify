@@ -1,10 +1,12 @@
 # Discoverify
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/55e29423-f3a8-4462-b9e7-fa8b148f003e/deploy-status)](https://app.netlify.com/sites/peppy-elf-212874/deploys)
 
 Show the amount of storage you'll need to save all your songs as mp3 files
 
-## Demo 
-https://playlistify.bahbi.net
+## Demo
+
+https://discoverify.bahbi.net
 
 ## Getting Started
 
@@ -17,18 +19,19 @@ To work with this project locally, first install all dependecies:
 Git clone
 
 ```
-git clone https://github.com/superbahbi/Playlistify.git
+git clone https://github.com/superbahbi/discoverify.git
 ```
 
 Install NPM packages
 
 ```
-npm install 
+npm install
 ```
+
 Start the application
 
 ```
-npm start 
+npm start
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
@@ -53,20 +56,19 @@ npm run build
 
 ## Built With
 
-* [React](https://reactjs.org/)
-* [Spotify Web API JS](https://github.com/JMPerez/spotify-web-api-js) 
-* [React Spotify Auth](https://github.com/kevin51jiang/react-spotify-auth)
-* [React Spotify API](https://github.com/idanlo/react-spotify-api)
+- [React](https://reactjs.org/)
+- [Spotify Web API JS](https://github.com/JMPerez/spotify-web-api-js)
+- [React Spotify Auth](https://github.com/kevin51jiang/react-spotify-auth)
+- [React Spotify API](https://github.com/idanlo/react-spotify-api)
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
-* **Bahbi Kugler** - *Initial work* - [superbahbi](https://github.com/superbahbi)
-
+- **Bahbi Kugler** - _Initial work_ - [superbahbi](https://github.com/superbahbi)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
